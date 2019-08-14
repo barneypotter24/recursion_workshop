@@ -50,5 +50,5 @@ if __name__=="__main__":
                               Point2(2,0),
                               Point2(1,sqrt(3)) )
 
-    ts = sierpinsky(1, T)
+    ts = sierpinsky(5, T)
     plot_sier(ts)
