@@ -2,7 +2,7 @@ import numpy as np
 from math import sqrt
 from classes import Point2, Triangle
 
-def sierpinsky(layers, t):
+def sierpinski(layers, t):
 
     assert type(t) == Triangle, "input was not a Triangle"
     if layers > 9:
@@ -20,7 +20,7 @@ def sierpinsky(layers, t):
         t2 = Triangle(AB,t.B,BC)
         t3 = Triangle(CA,BC,t.C)
 
-        return sierpinsky(layers-1, t1) + sierpinsky(layers-1, t2) + sierpinsky(layers-1, t3)
+        return sierpinski(layers-1, t1) + sierpinski(layers-1, t2) + sierpinski(layers-1, t3)
 
 
 def plot_sier(ts):
@@ -43,12 +43,12 @@ def plot_sier(ts):
     ax.set_xlim(0,2)
     ax.set_ylim(0,sqrt(3))
 
-    plt.savefig('../output/sierpinsky.png')
+    plt.savefig('output/sierpinski.png')
 
 if __name__=="__main__":
     T = Triangle( Point2(0,0),
                               Point2(2,0),
                               Point2(1,sqrt(3)) )
 
-    ts = sierpinsky(5, T)
+    ts = sierpinski(5, T)
     plot_sier(ts)
