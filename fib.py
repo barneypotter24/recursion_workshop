@@ -18,7 +18,8 @@ def fib(n):
     if n > 20:
         n = 20
         print("Input number was too high, resetting to 20 to save computer time.")
-    PUT YOUR RECURSIVE FIBONACCI FUNCTION HERE
+
+    return #PUT YOUR RECURSIVE FIBONACCI FUNCTION HERE
 
 
 

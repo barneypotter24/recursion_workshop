@@ -7,7 +7,7 @@ def count_terminal_nodes(n):
     '''From a given node, count all of its descendant terminals
     '''
 
-    PUT YOUR RECURSIVE NODE COUNTER HERE
+    return # PUT YOUR RECURSIVE NODE COUNTER HERE
 
 
 

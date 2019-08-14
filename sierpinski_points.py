@@ -9,19 +9,10 @@ def sierpinski(layers, t):
         print("Too many layers specified, resetting to max of 9")
         layers = 9
 
-    if layers == 0:
-        return [t]
-    else:
-        AB = t.A.midpoint(t.B)
-        BC = t.B.midpoint(t.C)
-        CA = t.C.midpoint(t.A)
+    return #PUT YOUR RECURSIVE FUNCTION HERE
 
-        t1 = Triangle(t.A,AB,CA)
-        t2 = Triangle(AB,t.B,BC)
-        t3 = Triangle(CA,BC,t.C)
 
-        return sierpinski(layers-1, t1) + sierpinski(layers-1, t2) + sierpinski(layers-1, t3)
-
+#### HELPER FUNCTIONS ####
 
 def plot_sier(ts):
     from matplotlib.patches import Circle, Wedge, Polygon

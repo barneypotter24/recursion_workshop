@@ -6,7 +6,7 @@ def count_transitions(n, color_handed=None):
     '''From a given node, count all of its descendant color changes
     '''
 
-    PUT YOUR RECURSIVE FUNCTION HERE
+    return #PUT YOUR RECURSIVE FUNCTION HERE
 
 
 
